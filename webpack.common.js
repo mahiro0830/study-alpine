@@ -118,12 +118,22 @@ module.exports = {
     new CleanWebpackPlugin(),
 
     // top
-    new HtmlWebpackPlugin({
-      filename: "index.html",
-      template: "./src/html/index.pug",
-      inject: "body",
-      chunks: ["app"],
-    }),
+    new HtmlWebpackPlugin({filename: "index.html",template: "./src/html/index.pug",inject: "body",chunks: ["app"],}),
+    new HtmlWebpackPlugin({filename: "test00.html",template: "./src/html/test00.pug",inject: "body",chunks: ["app"],}),
+    new HtmlWebpackPlugin({filename: "test01.html",template: "./src/html/test01.pug",inject: "body",chunks: ["app"],}),
+    new HtmlWebpackPlugin({filename: "test02.html",template: "./src/html/test02.pug",inject: "body",chunks: ["app"],}),
+    new HtmlWebpackPlugin({filename: "test03.html",template: "./src/html/test03.pug",inject: "body",chunks: ["app"],}),
+    new HtmlWebpackPlugin({filename: "test04.html",template: "./src/html/test04.pug",inject: "body",chunks: ["app"],}),
+    new HtmlWebpackPlugin({filename: "test05.html",template: "./src/html/test05.pug",inject: "body",chunks: ["app"],}),
+    new HtmlWebpackPlugin({filename: "test06.html",template: "./src/html/test06.pug",inject: "body",chunks: ["app"],}),
+    new HtmlWebpackPlugin({filename: "test07.html",template: "./src/html/test07.pug",inject: "body",chunks: ["app"],}),
+    new HtmlWebpackPlugin({filename: "test08.html",template: "./src/html/test08.pug",inject: "body",chunks: ["app"],}),
+    new HtmlWebpackPlugin({filename: "test09.html",template: "./src/html/test09.pug",inject: "body",chunks: ["app"],}),
+    new HtmlWebpackPlugin({filename: "test10.html",template: "./src/html/test10.pug",inject: "body",chunks: ["app"],}),
+    new HtmlWebpackPlugin({filename: "test11.html",template: "./src/html/test11.pug",inject: "body",chunks: ["app"],}),
+    new HtmlWebpackPlugin({filename: "test12.html",template: "./src/html/test12.pug",inject: "body",chunks: ["app"],}),
+    new HtmlWebpackPlugin({filename: "test13.html",template: "./src/html/test13.pug",inject: "body",chunks: ["app"],}),
+    new HtmlWebpackPlugin({filename: "test14.html",template: "./src/html/test14.pug",inject: "body",chunks: ["app"],}),
 
     new MiniCssExtractPlugin({
       filename: "./assets/css/app.css", // Sassのコンパル先
