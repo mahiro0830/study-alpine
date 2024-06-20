@@ -10,7 +10,7 @@ html(lang="ja")
       div(x-data="{ isOpen: false }")
         button(@click="isOpen = true") Open Modal
 
-        div(x-show="isOpen" @click.away="isOpen = false")
+        div(x-show="isOpen" @click.away="isOpen = false" x-transition)
           h2 Modal Title
           p Modal Content...
           button(@click="isOpen = false") Close Modal
