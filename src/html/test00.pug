@@ -8,11 +8,13 @@ html(lang="ja")
 
     main
       div(x-data="{ isOpen: false }")
-        button(@click="isOpen = true") Open Modal
+        button(@click="isOpen = true") モーダルを開く
 
         div(x-show="isOpen" @click.away="isOpen = false" x-transition)
-          h2 Modal Title
-          p Modal Content...
-          button(@click="isOpen = false") Close Modal
+          p Modal Content...<br />
+            | Modal Content...<br />
+            | Modal Content...<br />
+            | Modal Content...
+          button(@click="isOpen = false") モーダルを閉じる
 
     include inc/_footer

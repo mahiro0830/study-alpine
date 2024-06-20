@@ -1,0 +1,32 @@
+doctype html
+html(lang="ja")
+  include inc/_head
+
+  body
+
+    include inc/_header
+
+    main(x-data="{ list: list }")
+      //- x-for
+      template(x-for="item in list")
+        div
+          h2(x-text="item.title")
+          p(x-text="item.description")
+
+    include inc/_footer
+
+    script.
+      const list = [
+        {
+          title: 'タイトル1',
+          description: '説明1',
+        },
+        {
+          title: 'タイトル2',
+          description: '説明2',
+        },
+        {
+          title: 'タイトル3',
+          description: '説明3',
+        },
+      ];
